@@ -27,7 +27,8 @@ jobs:
             sudo sh -c "chown -R ubuntu $HOME"
             sudo sh -c "chmod 777 $GITHUB_WORKSPACE"
             sudo sh -c "chmod 777 $RUNNER_TEMP"
-            # sudo sh -c "chmod 777 $GITHUB_WORKSPACE/../../_temp"
+            sudo sh -c "chmod 777 $GITHUB_WORKSPACE/../../_temp"
+            sudo sh -c "chmod 777 /__w/_temp"
             sudo sh -c "chmod 777 /home"
 
       - uses: actions/checkout@v3
